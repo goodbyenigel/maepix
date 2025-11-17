@@ -80,6 +80,14 @@
       color: inherit;
       text-decoration: none;
     }
+
+    /* On phones, pull ABOUT/CONTACT higher so they're above Safari's bar */
+    @media (max-width: 600px) {
+      .bottom-left,
+      .bottom-right {
+        bottom: 80px; /* adjust this if you want them higher/lower */
+      }
+    }
   </style>
 </head>
 <body>
@@ -104,6 +112,8 @@
   </div>
 </body>
 </html>
+
+
 
 
 
