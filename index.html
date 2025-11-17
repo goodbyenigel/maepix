@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio Landing</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Helvetica, Arial, sans-serif;
+      background: #ff66b5;
+      color: #000;
+      height: 100vh;          /* lock to viewport height */
+      overflow: hidden;       /* no scrolling */
+      position: relative;
+    }
+
+    .bg-blur {
+      position: absolute;
+      inset: 0;
+      background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAABaAAAAQACAYAAAAXy/6SAAAACXBIWXMAAAsTAAA...Mx954Zzs6/4TpEAIkDls7vK1V22EdX9UgsJguAiMwhBjv/v/4cNBoPBYDAYDAaD') center/cover no-repeat;
+      filter: blur(40px);
+      opacity: 0.4;
+      z-index: 0;
+    }
+
+    /* Center title */
+    .container {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+      z-index: 1;
+      width: 100%;
+      padding: 0 16px;
+      box-sizing: border-box;
+    }
+
+    h1 {
+      font-size: clamp(22px, 4vw, 32px);
+      font-weight: bold;
+      letter-spacing: 1px;
+      margin: 0.4em 0;
+      line-height: 1.2;
+    }
+
+    /* Corner labels */
+    .corner {
+      position: absolute;
+      font-weight: bold;
+      z-index: 2;
+      font-size: clamp(14px, 2vw, 20px);
+      white-space: nowrap;
+    }
+
+    .top-left {
+      top: 20px;
+      left: 20px;
+    }
+
+    .top-right {
+      top: 20px;
+      right: 20px;
+    }
+
+    .bottom-left {
+      bottom: 20px;
+      left: 20px;
+      font-size: clamp(12px, 1.8vw, 16px);
+    }
+
+    .bottom-right {
+      bottom: 20px;
+      right: 20px;
+      font-size: clamp(12px, 1.8vw, 16px);
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+  <div class="bg-blur"></div>
+
+  <div class="corner top-left">SARAH MAE POLAK</div>
+
+  <div class="corner top-right">
+    <a href="projects.html">PROJECTS</a>
+  </div>
+
+  <div class="container">
+    <h1>TORONTO<br>BASED<br>PRODUCTION<br>DESIGNER</h1>
+  </div>
+
+  <div class="corner bottom-left">
+    <a href="about.html">ABOUT</a>
+  </div>
+
+  <div class="corner bottom-right">
+    <a href="contact.html">CONTACT</a>
+  </div>
+</body>
+</html>
+
+
+
